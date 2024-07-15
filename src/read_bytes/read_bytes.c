@@ -29,8 +29,8 @@ void	print_bytes(const t_bytes bytes) {
 	printf("\n");
 }
 
-void	read_and_print_bytes(const void *var, const size_t size) {
-	t_bytes	bytes = read_bytes(var, size);
+void	read_and_print_bytes(const void *address, const size_t size) {
+	t_bytes	bytes = read_bytes(address, size);
 
 	print_bytes(bytes);
 	free(bytes.octets);
