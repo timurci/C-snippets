@@ -4,7 +4,7 @@ t_bytes	read_bytes(const void *address, const size_t size) {
 	size_t			count = size / sizeof(unsigned char);
 	unsigned char	*octet = malloc(sizeof(unsigned char) * size);
 
-	for (size_t i = 0; i < size; i++) {
+	for (size_t i = 0; i < count; i++) {
 		octet[i] = *((unsigned char *) address + i);
 	}
 
